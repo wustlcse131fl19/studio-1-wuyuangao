@@ -12,6 +12,22 @@ public class Ordered {
 		int x = ap.nextInt("Value for x?");
 		int y = ap.nextInt("Value for y?");
 		int z = ap.nextInt("Value for z?");
+		boolean xy = x>y;
+		boolean yz = y>z;
+		boolean finale = xy&&yz;
+
+
+
+		boolean yx = y>x;
+		boolean zy = z>y;
+		boolean finale2 = yx&&zy;
+
+
+		boolean finale3 = finale||finale2;
+		System.out.println("Ascending or descending order? " + finale3);
+
+
+
 
 	}
 
